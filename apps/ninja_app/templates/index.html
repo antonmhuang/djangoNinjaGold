@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Money</title>
+    <style>
+        .container{
+            margin: 20px auto;
+            width: 1000px;
+            min-height: 100px;
+            border: 1px dotted red;
+        }
+        .col{
+            display: inline-block;
+            border: 1px solid black;
+            width: 180px;
+            text-align: center;
+        }
+        .text{
+            max-height: 150px;
+            overflow-y: scroll;
+            border: 2px solid black;
+            padding: 0 10px;
+        }
+        .newgold{
+            color: green;
+        }
+        .lostgold{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label>Your Gold: {{request.session.gold}} </label>
+        <br>
+        <div class="col">
+            <label><b>Farm</b></label>
+            <p>(earns 10-20 gold)</p>
+            <form action="/process", method="POST">
+                {% csrf_token %}
+                <input type="hidden" class="newgold">
+                <input type="submit", name="farm", value="Find Gold!">
+            </form>
+        </div>
+        <div class="col">
+            <label><b>Cave</b></label>
+            <p>(earns 5-10 gold)</p>
+            <form action="/process", method="POST">
+                {% csrf_token %}
+                <input type="hidden", name="newgold">
+                <input type="submit", name="cave", value="Find Gold!">
+            </form>
+        </div>
+        <div class="col">
+            <label><b>House</b></label>
+            <p>(earns 2-5 gold)</p>
+            <form action="/process", method="POST">
+                {% csrf_token %}
+                <input type="hidden", name="newgold">
+                <input type="submit", name="house", value="Find Gold!">
+            </form>
+        </div>
+        <div class="col">
+            <label><b>Casino</b></label>
+            <p>(earns/takes 0-50 gold)</p>
+            <form action="/process", method="POST">
+                {% csrf_token %}
+                <input type="hidden", name="newgold">
+                <input type="submit", name="casino", value="Find Gold!">
+            </form>
+        </div>
+        <p>Activities:</p>
+        <div class="text">
+        {{request.session.text|safe}}
+        </div>
+    </div>
+</body>
+</html>
