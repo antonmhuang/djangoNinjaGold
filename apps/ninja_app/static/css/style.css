@@ -1,12 +1,90 @@
 *{
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
+    background-color: #6666ff;
 }
-.container{
+/* .img1{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
     border: 1px solid black;
+} */
+.container{
+    border: 5px solid gold;
     width: 1000px;
-    margin: 40px auto;
-}
+    /* margin: 40px auto; */
+    display: inline-block;
+    vertical-align: top;
 
+}
 .col{
+    display: inline-block;
+    border: 5px solid gold;
+    width: 200px;
+    margin-left: 28px;
+    height: 150px;
+}
+.gold{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 40px;
+    margin-bottom: 24px;
+    width: 400px;
+    color: gold;
+}
+.active{
+    margin-left: 10px;
+    font-size: 28px;
+    color: gold;
+}
+.col label{
+    margin-left: 40%;
+}
+.button{
+    width: 180px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: gold;
+    margin-top: 35px;
+}
+.col p{
+    margin-left: 20%;
+}
+.newgold{
+    color: green;
+}
+.lostgold{
+    color: red;
+}
+.text{
+    width: 300px;
+    margin-left: 20px;
+}
+.newgame{
+    width: 180px;
+    margin-left: 333px;
+    height: 535x;
+    border-radius: 10px;
+    background-color: gold;
+    font-size: 21px;
+}
+.newgame_form{
+    display: inline-block;
+    width: 530px;
 
 }
+.text{
+    height: 170px;
+    overflow-y: scroll;
+    border: 5px solid gold;
+    margin-bottom: 20px;
+    width: 950px;
+}
+#main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* .img1{ */
+    /* background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F361038%2Fscreenshots%2F3587459%2Fcoin_000.gif&imgrefurl=https%3A%2F%2Fdribbble.com%2Fshots%2F3587459-Chinese-coins&docid=C04lI2-C7heu-M&tbnid=LZNCqoJ8ivtmvM%3A&vet=1&w=400&h=300&bih=950&biw=1922&ved=2ahUKEwjk15KHtrvcAhUwIDQIHa-MARcQxiAoBnoECAEQGg&iact=c&ictx=1"); */
+    /* background: image('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F361038%2Fscreenshots%2F3587459%2Fcoin_000.gif&imgrefurl=https%3A%2F%2Fdribbble.com%2Fshots%2F3587459-Chinese-coins&docid=C04lI2-C7heu-M&tbnid=LZNCqoJ8ivtmvM%3A&vet=1&w=400&h=300&bih=950&biw=1922&ved=2ahUKEwjk15KHtrvcAhUwIDQIHa-MARcQxiAoBnoECAEQGg&iact=c&ictx=1') */
+/* } */
