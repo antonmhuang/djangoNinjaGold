@@ -28,9 +28,10 @@ def process(request):
         else:
             request.session['gold'] = request.session['gold'] - rand
             request.session['text'] = "<p class='lostgold'>Lost "+ str(rand) + " gold from the casino!</p>" + request.session['text']
-
     
     return redirect('/')
 
-        
+def reset(request):
+    request.session.clear()
+    return redirect('/')
       
