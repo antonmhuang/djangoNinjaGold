@@ -2,15 +2,9 @@
     /* outline: 1px dashed red; */
     background-color: #6666ff;
 }
-/* .img1{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    border: 1px solid black;
-} */
 .container{
     border: 5px solid gold;
-    width: 1000px;
+    width: 944px;
     /* margin: 40px auto; */
     display: inline-block;
     vertical-align: top;
@@ -20,8 +14,8 @@
     display: inline-block;
     border: 5px solid gold;
     width: 200px;
-    margin-left: 28px;
-    height: 150px;
+    margin-left: 15px;
+    height: 167px;
 }
 .gold{
     display: inline-block;
@@ -36,22 +30,19 @@
     font-size: 28px;
     color: gold;
 }
-.col label{
-    margin-left: 40%;
-}
+
 .button{
-    width: 180px;
+    /* margin-top: 5px; */
+    width: 150px;
     margin-left: 10px;
     height: 40px;
     border-radius: 10px;
     background-color: gold;
-    margin-top: 35px;
-}
-.col p{
-    margin-left: 20%;
+    margin-bottom: 10px;
 }
 .newgold{
-    color: green;
+    /* color: green; */
+    color: RGB(73, 251, 53);
 }
 .lostgold{
     color: red;
@@ -78,7 +69,7 @@
     overflow-y: scroll;
     border: 5px solid gold;
     margin-bottom: 20px;
-    width: 950px;
+    width: 890px;
 }
 #main-container{
     width: 1200px;
@@ -88,3 +79,100 @@
     /* background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F361038%2Fscreenshots%2F3587459%2Fcoin_000.gif&imgrefurl=https%3A%2F%2Fdribbble.com%2Fshots%2F3587459-Chinese-coins&docid=C04lI2-C7heu-M&tbnid=LZNCqoJ8ivtmvM%3A&vet=1&w=400&h=300&bih=950&biw=1922&ved=2ahUKEwjk15KHtrvcAhUwIDQIHa-MARcQxiAoBnoECAEQGg&iact=c&ictx=1"); */
     /* background: image('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F361038%2Fscreenshots%2F3587459%2Fcoin_000.gif&imgrefurl=https%3A%2F%2Fdribbble.com%2Fshots%2F3587459-Chinese-coins&docid=C04lI2-C7heu-M&tbnid=LZNCqoJ8ivtmvM%3A&vet=1&w=400&h=300&bih=950&biw=1922&ved=2ahUKEwjk15KHtrvcAhUwIDQIHa-MARcQxiAoBnoECAEQGg&iact=c&ictx=1') */
 /* } */
+#farm{
+    background: url("/static/images/Farm.png") no-repeat;
+}
+
+#farm_wrapper{
+    display: inline-block;
+}
+#farm_wrapper label {
+    margin-left: 32%;
+    font-size: 40px;
+}
+#farm_wrapper p{
+    text-align: center;
+}
+#farm_wrapper form{
+    margin-left: 15%;
+    margin-top: 5px;
+}
+#farm_wrapper p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#cave_wrapper{
+    display: inline-block;
+}
+#cave_wrapper label{
+    margin-left: 32%;
+    font-size: 40px;
+}
+#cave_wrapper p{
+    margin-left: 62px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cave_button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: gold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 47px;
+}
+#cave{
+    background: url("/static/images/cave.png") no-repeat;
+    background-size: contain;
+}
+#house_wrapper{
+    display: inline-block;
+}
+#house_wrapper label{
+    font-size: 40px;
+    margin-left: 61px;
+}
+#house_wrapper p{
+    margin-left: 67px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.house_button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: gold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 47px;
+}
+#house{
+    background: url("/static/images/house.jpg") no-repeat;
+    background-size: cover;
+}
+#casino_wrapper{
+    display: inline-block;
+}
+#casino_wrapper label{
+    font-size: 40px;
+    margin-left: 56px;
+}
+#casino_wrapper p{
+    margin-left: 42px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.casino_button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: gold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 47px;   
+}
+#casino{
+    background: url("/static/images/casino.png") no-repeat;
+    background-size: cover;
+}
